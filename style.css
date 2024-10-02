@@ -1,23 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
 body {
-    font-family: 'Roboto Slab', serif;
+    font-family: "Roboto Slab", serif;
     display: flex;
     flex-direction: column;
-    gap: 1.srem;
-
+    gap: 1.5rem;
 }
+
 
 /* NavBar */
 header,
 footer {
-    color: rgb(255, 98, 0);
+    color: rgb(253, 253, 253);
     font-size: large;
-    background-color: antiquewhite;
+    background-color: #000000;
     width: 100vw;
 }
 
@@ -37,7 +39,7 @@ nav li {
 }
 
 nav a {
-    color: blue;
+    color: rgb(249, 244, 244);
     text-decoration: none;
 }
 
@@ -49,7 +51,7 @@ nav a {
     font-weight: bold;
 }
 
-.nav-li6 {
+.nav_li6 {
     position: relative;
 }
 
@@ -65,19 +67,62 @@ button {
     font-weight: bolder;
 }
 
-.nav_li7,
-.nav_li8,
+.btn.nav_li7,
+.btn.nav_li8,
 button {
-    background-color: rgb(225, 191, 146);
+    background-color: #0056b3;
     border: 3px solid black;
     border-radius: 6px;
     padding: 6px 14px;
 }
 
-.nav_li7 a,
-.nav_li8 a {
-    color: rgb(144, 78, 78);
+.btn.nav_li7 a,
+.btn.nav_li8 a {
+    color: rgb(255, 255, 255);
 }
+
+
+/*  carousel image / script */
+.carousel {
+    position: relative;
+    text-align: center;
+}
+
+.heroProduct {
+    height: 350px;
+    width: 450px;
+    object-fit: cover;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    /* justify-content: space-between; */
+    width: 30%;
+
+}
+
+.carousel-btn {
+    background-color: rgba(75, 71, 71, 0.582);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    margin: 100px;
+    margin-left: 0px;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(255, 255, 255, 0.233);
+}
+
+
+
 
 /* hero section / 1st and 2nd */
 .main {
@@ -88,7 +133,7 @@ button {
     justify-content: center;
 }
 
-.main{
+.main1 {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -100,7 +145,7 @@ button {
     gap: 4rem;
 }
 
-.heroproduct{
+.heroProduct {
     border-radius: 10px;
 }
 
@@ -114,6 +159,7 @@ button {
     gap: 3rem;
     width: 80%;
     margin-left: 10%;
+    margin-top: 100px;
     margin-bottom: 100px;
 }
 
@@ -130,7 +176,6 @@ button {
 .price p {
     font-size: large;
     font-weight: bolder;
-
 }
 
 .s1ProductDetails,
@@ -138,7 +183,7 @@ button {
     text-align: justify;
 }
 
-.btnprice,
+.btnPrice,
 .price {
     display: flex;
     gap: 1rem;
@@ -146,7 +191,7 @@ button {
 
 .section3 {
     width: 100%;
-    background-color: black;
+    background-color: #000000;
 }
 
 .section3_d1 {
@@ -156,35 +201,99 @@ button {
     gap: 2rem;
 }
 
-
-.carousel {
-    position: relative;
-    text-align: center;
-
-}
-
-.heroproduct {
-    object-fit: cover;
-    width: 250px;
-    height: 300px;
-
-}
-
-.carousel-controls {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* Card Container */
+.ecard{
     display: flex;
-    width: -30%;
+    margin-left: 115px;
+    justify-content: center;
 }
 
-.carousel_btn {
+.card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px bisque ;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.product-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.product-description {
+    font-size: 0.9rem;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0, 0.9);
+    margin-bottom: 20px;
+}
+
+.buy-button {
+    background-color: #0056b3;
+    color: aliceblue;
     padding: 10px 20px;
-    cursor: pointer;
-    margin: 0 10px;
-    border-radius: 50%;
-    transition: 0.3 ease-out;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: blue;
+}
+
+.viewmore{
+    text-align: center;
+}
+
+/**footer**/
+
+.footer {
+    width: 100;
+    padding-top: 3em;
+    padding-bottom: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer h4 {
+    margin-bottom: 15px;
+}
+
+.icn {
+    background-color: aliceblue;
+    border-radius: 100px;
+}
+
+.footer2 p a{
+    color: aliceblue;
+}
+
+.pro {
+    text-align: center;
+    font-size: 1rem;
 }
 
 
