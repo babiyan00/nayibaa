@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- This is  a header section  -->
+    <header>
+        <nav class="nav">
+            <ul class="nav_ul">
+                <li class="nav_li1">
+                    <a href="/" class="nav-link"> <!-- Link to the homepage or desired page -->
+                        <img class="navLogo" src="./images/logo.png" height="50" alt="NavLogo" />
+                    </a>
+                </li>
+
+                <li class="nav_li2"> <a href="./index.html">Home</a></li>
+                <li class="nav_li3"><a href="./product.html">Product</a></li>
+                <li class="nav_li4"><a href="./about.html">About</a></li>
+                <li class="nav_li5"><a href="./contact.html">Contact</a></li>
+                <li class="search nav_li6"><img src="./images/iconSearch.png" class="search" height="22" alt="search" />
+                    <input type="text" name="search" id="search" />
+                </li>
+                <li class="btn nav_li7 signin">
+                    <a href="signup.html">SignUp</a>
+                </li>
+                <li class="btn nav_li8 login">
+                    <a href="./login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!--contact-->
+    <div class="background-page">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <form action="#" method="POST"></form>
+            
+                <!-- FULL Name -->
+                <div class="form-group">
+                    <label for="name">FULL Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                </div>
+            
+                <!--  Email Address -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="your email address" required>
+                </div>
+            
+                <!-- Phone Number -->
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number" required pattern="[0-9]{10}">
+                </div>
+            
+                <!--Address -->
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder="Your address" required>
+            
+                </div>
+            
+                <!-- State Dropdown (States of Nepal) -->
+                <div class="form-group">
+                    <label for="state">State</label>
+                    <select id="state" name="state" required>
+                        <option value="">Select your state</option>
+                        <option value="province1">province No. 1</option>
+                        <option value="province2">province No. 2</option>
+                        <option value="bagmati">Bagmati province</option>
+                        <option value="gandaki">Gandaki province</option>
+                        <option value="lumbini">Lumbini province</option>
+                        <option value="karnali">Karnali province</option>
+                        <option value="sudurpaschim">Sudurpaschim province</option>
+            
+                    </select>
+            
+                </div>
+            
+                <!-- Subject -->
+                <div class="form-group">
+                    <label for="Subject">Subject</label>
+                    <input type="text" id="Subject" name="Subject" placeholder="Subject" required>
+                </div>
+            
+                <!-- Message -->
+                <div class="form-group">
+                    <label for="message">message</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Your message" required></textarea>
+            
+                </div>
+            
+                <!-- Submit Button -->
+                <button type="submit">Send message</button>
+            </form>
+        </div>
+
+    </div>
+    
+
+ <!--footer-->
+
+    <footer>
+        <div class="footer">
+            <div class="footer1">
+                <h4>HELP</h4>
+                <p>Support us</p>
+                <p>FAQ's</p>
+                <p>Terms and Conditions</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="footer2">
+                <h4>COMPANY</h4>
+                <p><a href="/">Home</a></p>
+                <p><a href="/contact.html">Contact</a></p>
+                <p><a href="/product.html">product</a></p>
+                <p><a href="/about.html">About</a></p>
+            </div>
+            <div class="footer3">
+                <h4>SOCIAL MEDIA</h4>
+                <div class="footer1" style="padding-bottom: 15px;">
+                    <img class="icn icnIg" src="./images/facebook-logo.png" height="25" alt="facebook" />
+                    <img class="icn icnIg" src="./images/instagram-logo.png" height="25" alt="instagram" />
+                    <img class="icn icnIg" src="./images/twitter-logo.png" height="25" alt="twitter" />
+
+                </div>
+                <div class="ftr2">
+                    <img src="./images/logo.png" height="40" alt="footerlogo" />
+                </div>
+    </footer>
+</body>
+
+</html>

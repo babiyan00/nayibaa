@@ -296,4 +296,152 @@ button {
     font-size: 1rem;
 }
 
+/* Contact us page css */
+
+.background-page{
+    background-image: url(./images/headphone1.png);
+    background-position: center;
+    background-size: cover;
+    background-color: #777;
+    margin-top: -30px;
+    margin-bottom: -30px;
+}
+
+.contact-container {
+    background-color: rgba(255, 255, 255, 0.233);
+    padding: 30px ;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 340px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+ h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select,
+textarea
+ {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="'email"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+    
+}
+
+@media (max-width: 600px) {
+    .contact-container {
+        padding: 20px;
+    }
+}
+
+/* about us page */
+.about-us-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    /* White background forthe about section */ 
+}
+
+.about-us-container {
+    max-width: 1250px;
+    padding: 30px;
+    background-color: #ffffff;
+    /*White background for readability */
+    border-radius: 10px;
+    box-shadow: 02px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-us-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    /* Add space between paragraphs */
+}
+
+.map-container {
+    margin-top: 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 400px;
+}
+
+.about-us-container h3 {
+    margin-top: 30px;
+    font-size: 1.8rem;
+}
+
+/* signup and login page */
+
+.ululu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.ululu a{
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+
+
 
